@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+  <head>
+    <title>RESPOSIVE WEB</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav class="logo">
+        <img src="images/logo.png">
+      </nav>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#"></a>HOME</li>
+          <li><a href="#"></a>PHONE</li>
+          <li><a href="#"></a>ACCESSORIES</li>
+          <li><a href="#"></a>CART</li>
+        </ul>
+      </nav>
+
+      <div class="information">
+          <div class="overlay"></div>
+          <img src="images/mobile.png" class="mobile">
+        <div id="bulet">
+            <div class="feature one">
+                <img src="images/camera.png">
+                <div>
+                    <h1>Camera</h1>
+                    <p>108MP, Wide Angle Lens</p>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="images/processor.png">
+                <div>
+                    <h1>Processor</h1>
+                    <p>Snapdragon 835</p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="images/display.png">
+                <div>
+                    <h1>Display</h1>
+                    <p>5.9" Amoled</p>
+                </div>
+            </div>
+            <div class="feature four">
+                <img src="images/battery.png">
+                <div>
+                    <h1>Battery</h1>
+                    <p>5000mAH, 84Hrs Standby</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <img src="images/arrow.png" id="upbtn">
+        <h3>Features</h3>
+        <img src="images/arrow.png" id="downbtn">
+      </div>
+    
+    </div>
+
+    <script>
+            var bulet = document.getElementById("bulet");
+            var upbtn = document.getElementById("upbtn");
+            var downbtn = document.getElementById("downbtn");
+
+            var rotatevalue = bulet.style.transform;
+            var rotatesum;
+
+            upbtn.onclick = function()
+            {
+                rotatesum = rotatevalue + "rotate(-90deg)";
+                bulet.style.transform = rotatesum;
+                rotatevalue = rotatesum;
+            }
+            downbtn.onclick = function()
+            {
+                rotatesum = rotatevalue + "rotate(90deg)";
+                bulet.style.transform = rotatesum;
+                rotatevalue = rotatesum;
+            }
+    </script>
+  </body>
+</html>
