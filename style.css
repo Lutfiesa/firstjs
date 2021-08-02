@@ -68,7 +68,7 @@ nav {
   position: fixed;
   border-radius: 50%;
   transform: rotate(0deg);
-  transition: 1ms;
+  transition: 2ms;
 }
 
 .feature {
